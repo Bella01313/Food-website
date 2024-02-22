@@ -1,0 +1,239 @@
+/* GENERAL STYLES  */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    max-width: 1120px;
+}
+
+/* HEADER  */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 20px 40px 20px 40px; */
+    padding: 20px 40px;
+}
+
+@media screen and (width < 768px) {
+    
+}
+
+@media screen and (width < 425px) {
+    header {
+        padding: 15px 10px;
+    }
+}
+
+
+/* FOOD LIST  */
+#food_list_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px 40px;
+}
+
+#food_list_section #food_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#food_list div {
+    width: 24%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#food_list div h3 {
+    margin: 10px 0px;
+    line-height: 30px;
+}
+
+#food_list div p {
+    line-height: 25px;
+}
+
+#food_list div img {
+    width: 100%;
+}
+
+#pagination {
+    margin-top: 20px;
+}
+
+#pagination_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination_container button {
+    padding: 12px 15px;
+    border: 0px;
+    background-color: white;
+}
+
+#pagination_container #default_button {
+    background-color: black;
+    color: white; 
+}
+
+#pagination_container button:hover {
+    background: black;
+    color: white;
+}
+
+@media screen and (width < 1120px) {
+   #food_list_section {
+    padding: 0px 20px;
+   } 
+}
+
+@media screen and (width < 600px) {
+    #food_list div {
+        width: 100%;
+    }
+}
+
+/* ABOUT SECTION  */
+.about{
+    padding: 0.01em 16px;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    display: inline-block;
+    width: auto;
+    text-align: center
+
+}
+.about::after, .about::before, .ccc::after, .ccc::before{
+    content: "";
+    display: table;
+    clear: both
+}
+.me{
+    max-width: 100%;
+    height: auto
+}
+.mee{
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+h6{
+    font-size: 16px
+}
+@media screen and (width < 1120px) {
+    .about {
+     padding: 0px 20px;
+     width: 100%
+    } 
+ }
+ /* @media screen and (width < 600px) {
+    #fv {
+        width: 100%;
+    }
+} */
+
+/* FOOTER SECTION  */
+.ccc{
+    padding: 0 8px;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+.a{
+    float: left;
+    width: 100%;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+.aa{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.aa li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.aa li:hover{
+    background-color: #ccc;
+}
+.aa li:last-child{
+    border-bottom: none;
+}
+.d{
+    font-size: 18px !important
+
+}
+.aaa{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+.aaaa{
+    float: left;
+    margin-right: 16px !important
+}
+.cc{
+    float: left;
+    padding: 0 8px;
+    width: 33.33333%;
+    font-family: serif;
+    /* width: 100%; */
+}
+.c{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-bottom: 16px !important
+}
+.c:hover{
+    color: #fff !important;
+    background-color: #000 !important
+}
+.b{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: #fff !important;
+    background-color: #616161 !important;
+    font-size: 12px !important;
+    margin-bottom: 16px !important
+}
+.g{
+    color: black;
+}
+@media screen and (width < 1120px) {
+    .ccc {
+     padding: 0px 20px;
+     width: 100%;
+    } 
+ }
+ 
